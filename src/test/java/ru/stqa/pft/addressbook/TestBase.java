@@ -8,10 +8,12 @@ public class TestBase {
 
     protected final ApplicationManager app = new ApplicationManager();
 
+
     @BeforeSuite
     public void setUp() throws Exception {
         app.init();
     }
+
 
     @AfterMethod
     public void tearDown() throws Exception {
@@ -19,7 +21,4 @@ public class TestBase {
 
     }
 
-    public ApplicationManager getApp() {
-        return app;
-    }
 }

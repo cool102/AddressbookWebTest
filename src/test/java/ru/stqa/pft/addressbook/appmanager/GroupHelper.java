@@ -6,13 +6,12 @@ import ru.stqa.pft.addressbook.GroupData;
 
 public class GroupHelper extends HelperBase {
 
-
     public GroupHelper(WebDriver wd) {
         super(wd);
     }
 
     public void returnToGroupPage() {
-        click(By.linkText("groups"));
+        click( By.linkText("groups"));
     }
 
     public void submitGroupCreation() {
@@ -35,5 +34,9 @@ public class GroupHelper extends HelperBase {
 
     public void selectGroup() {
         click(By.name("selected[]"));
+    }
+
+    public void initGroupModification() {
+        click(By.name("edit"));
     }
 }
